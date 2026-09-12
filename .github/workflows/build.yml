@@ -35,7 +35,7 @@ jobs:
           zip -r Strand.ipa Payload
 
       - name: Upload IPA Artifact
-        uses: actions/artifacts@v4
+        uses: actions/upload-artifact@v4
         with:
           name: Strand-Unsigned-IPA
           path: Strand.ipa
